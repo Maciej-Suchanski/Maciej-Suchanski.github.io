@@ -1,0 +1,31 @@
+.circle{
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+i{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   zoom: 3;
+   color: orange;
+}
+
+hr{
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+body{
+    color: rgb(71, 71, 71);
+    font-family: sans-serif;
+}
+
+h6{
+    margin-top: 10px;
+}
