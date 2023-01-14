@@ -1,0 +1,31 @@
+hr {
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+body {
+  color: rgb(71, 71, 71);
+  font-family: sans-serif;
+}
+
+.accordion-button {
+  color: gold;
+  text-align: center;
+  text-decoration: underline;
+  background-color: rgb(241, 241, 241);
+}
+
+.accordion-button:not(.collapsed) {
+  color: gold;
+  text-decoration: underline;
+  background-color: rgb(241, 241, 241);
+}
+
+h6 {
+  margin: auto;
+}
+
+.accordion-button::after {
+  content: none;
+}/*# sourceMappingURL=styles.css.map */
