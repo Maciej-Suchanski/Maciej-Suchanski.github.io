@@ -1,0 +1,17 @@
+#someDivs{
+    width: 12rem;
+}
+
+#signUpSection{
+    background-image: url('/zadania/3-landing-page/img/slider-1.jpg'); 
+    width: 100%;
+}
+
+section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+img{
+    max-width: 200px;
+}
