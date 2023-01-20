@@ -20,10 +20,10 @@
 
             .icon-about {
                 color: $color-text-primary;
-                width: $base-font-size * 4.5;
-                height: $base-font-size * 4.5;
+                width: $base-font-size * 6;
+                height: $base-font-size * 6;
                 border-radius: 100%;
-                line-height: $base-font-size * 4.5;
+                line-height: $base-font-size * 6;
                 background-color: $color-primary;
                 margin: $margin-none auto $baseline;
             }
@@ -137,9 +137,9 @@
                 height:100%;
                 opacity: 0;
                 background: $color-portfolio-hover;
-                -webkit-transition: all .35s;
-                -moz-transition: all .35s;
-                transition: all .35s;
+                -webkit-transition: all 1s;
+                -moz-transition: all 1s;
+                transition: all 1s;
 
                 .portfolio-box-caption-content {
                     position: absolute;
@@ -188,7 +188,8 @@
             }
 
             .divider-light-dark {
-                width: $baseline * 2;
+                width: 25px;
+                opacity: 0.5;
                 margin-left: $padding-none;
                 margin-bottom: 20px;
             }
@@ -231,6 +232,11 @@
                     }
                 } 
             }
+        }
+
+        .thumbnail:hover {
+            transform: rotate(-45deg);
+            transition: 0.5s;
         }
     }
 
