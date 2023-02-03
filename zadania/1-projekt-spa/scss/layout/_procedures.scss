@@ -1,0 +1,98 @@
+.button-4 {
+  background-color: #30383b;
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  text-align: center;
+  border-radius: 40px;
+} 
+
+.button-4:hover {
+  background-color: #1ba4ce;
+}
+
+.button-5 {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 40px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.procedures-cards {
+  padding-bottom: 60px;
+  display: flex;
+  margin: auto;
+  width: 50%;
+  justify-content: center;
+}
+
+.procedures-bg {
+  width: 100%;
+}
+
+.procedures-cards .card {
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.procedures-cards .card-middle {
+  margin: 10px;
+  box-shadow: 0 5px 20px #f0f0f0;
+  padding: 15px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  .procedures-cards {
+    width: 100%;
+    flex-flow: row wrap;
+  }
+
+  .card h3,
+  .card p,
+  .card button,
+  .card-middle h3,
+  .card-middle p,
+  .card-middle button{
+    text-align: center;
+    margin: auto;  
+    justify-content: center;
+    align-items: center;  
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .card p,
+  .card-middle p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  h3 {
+    font-size: 35px;
+  }
+
+  .button-4 {
+    padding: 20px 60px;
+    font-size: 25px;
+  }
+
+  h6 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .card,
+  .card-middle {
+    width: 100%;
+  }
+}

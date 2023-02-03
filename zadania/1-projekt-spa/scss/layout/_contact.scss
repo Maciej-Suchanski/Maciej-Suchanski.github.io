@@ -1,0 +1,160 @@
+.first-form-container {
+  display: flex;
+}
+
+.contact-bg-img {
+  width: 40%;
+}
+
+.first-form-container-form {
+  font-size: 12px;
+  width: 60%;
+  background-color: #1ba4ce;
+  padding: 60px 40px 40px 20px;
+}
+
+.first-form-container-form input:not([type="submit"]),
+.first-form-container-form select {
+  color: white;
+  width: 35%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: #1ba4ce;
+  border-bottom: 1px solid white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.first-form-container-form textarea {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: #1ba4ce;
+  border-bottom: 1px solid white;
+  resize: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+input[type="submit"] {
+  margin-left: 20px;
+}
+
+.second-form-container {
+  padding: 60px;
+  color: white;
+  background-color: #1ba4ce;
+}
+
+.second-form-container-inner {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  padding: 40px;
+}
+
+.second-form-container-left {
+  margin: auto;
+}
+
+.second-form-container-right {
+  width: 20%;
+  margin: auto;
+}
+
+.second-form-container-form {
+  width: 50%;
+  margin: auto;
+}
+
+.second-form-container-form input[type="text"],
+.second-form-container-form input[type="email"] {
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: #1ba4ce;
+  border-bottom: 1px solid white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 80%;
+}
+
+.second-form-container-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: #1ba4ce;
+  border-bottom: 1px solid white;
+  resize: none;
+}
+
+.icon {
+  height: 20px;
+  width: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .first-form-container-form {
+    width: 100%;
+  }
+
+  .contact-bg-img {
+    display: none;
+  }
+
+  .first-form-container-form input:not([type="submit"]),
+  .first-form-container-form select,
+  .first-form-container-form textarea {
+    font-size: 50px;
+    width: 90%;
+  }
+
+  .first-form-container-form input[type="submit"] {
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    padding: 20px 32px;
+  }
+
+  .second-form-container-inner {
+    flex-direction: column;
+    margin-top: -70px;
+  }
+
+  .second-form-container-left,
+  .second-form-container-form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .second-form-container {
+    padding: 0;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}

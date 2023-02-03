@@ -1,0 +1,50 @@
+.procedures-cards .image-card {
+  padding: 15px;
+}
+
+.procedures-cards .image-card-middle {
+  padding: 15px;
+  margin-bottom: -25px;
+}
+
+.team-name {
+  position: relative;
+  background-color: white;
+  margin: -50px 20px 60px 20px;
+  padding: 10px;
+}
+
+.team-name-middle {
+  position: relative;
+  background-color: white;
+  margin: -70px 20px 60px 20px;
+  padding: 10px;
+  box-shadow: 0 5px 20px #f0f0f0;
+}
+
+.team-img {
+  width: 100%;
+}
+
+.social-icons-team i {
+  font-size: 25px;
+  margin: 10px;
+}
+
+i:hover {
+  color: #1ba4ce;
+}
+
+@media only screen and (max-width: 1000px) {
+  .image-card,
+  .image-card-middle {
+    width: 100%;
+  }
+
+  .team-name,
+  .team-name-middle {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
