@@ -10,20 +10,29 @@
   text-align: center;
 }
 
-.header-bg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  z-index: -1;
-}
-
-.header-flowers {
+.first-section-left img {
   position: absolute;
   top: 20%;
   left: 0;
-  width: 10%;
-  z-index: -1;
+  margin-left: -20px;
+  width: 15%;
+}
+
+.first-section-middle {
+  width: 70%;
+  float: left;
+}
+
+.first-section-middle img{
+  width: 70px;
+  float: left;
+}
+
+.first-section-right img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
 }
 
 .logo {
@@ -38,16 +47,15 @@
   align-items: center;
 }
 
-.navigation {
-  width: 70%;
+.navbar {
+  width: 40%;
   display: flex;
-  margin-left: 0;
-  margin-right: auto;
+  position: absolute;
 }
 
 .header-container {
   margin-top: 100px;
-  width: 40%;
+  width: 60%;
   margin-left: 0;
   margin-right: auto;
 }
@@ -95,16 +103,24 @@
     font-size: 50px;
   }
 
-  .header-bg {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
+  .first-section-left img{
+    position: absolute;
+    left: 0;
+    top: 0;
   }
-  .navigation {
-    opacity: 0;
-    width: 0px;
-    height: 0px;
+
+  .first-section-left {
+    display: none;
   }
+
+  .first-section-right {
+    display: none;
+  }
+
+  .first-section-middle {
+    width: 100%;
+  }
+
   .header-container {
     width: 100%;
   }

@@ -12,53 +12,70 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <title>spa</title>
 </head>
 
 <body>
-    <img src="img/header-bg.png" class="header-bg" />
-    <img src="img/header-flowers.png" class="header-flowers" />
     <div class="first-section container">
-        <header class="navigation">
-            <div class="item">
-                <img src="img/logo-txt.png" alt="logo" class="logo">
+        <div class="first-section-left">
+            <img src="./img/header-flowers.png" class="header-flowers">
+        </div>
+        <div class="first-section-middle">
+            <img src="./img/logo-txt.png" alt="logo-txt">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nav-home">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nav-about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nav-feature">FEATURE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nav-service">SERVICE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nav-contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-container" id="nav-home">
+                <p class="p-above-headers">SPA & BEAUTY CENTER</p>
+                <h1>Beauty and success starts here.</h1>
+                <p class="main-h1-p">Together creeping heaven upon third dominion be upon won't darkness rule behold
+                    itcreated good saw after she'd Our set living
+                </p>
+                <button class="button-1">
+                    Reserve now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button class="button-2">
+                    <i class="fa-regular fa-circle-play"></i>
+                    Watch our story
+                </button>
             </div>
-            <div class="item">
-                <p>HOME</p>
-            </div>
-            <div class="item">
-                <p>ABOUT</p>
-            </div>
-            <div class="item">
-                <p>FEATURE</p>
-            </div>
-            <div class="item">
-                <p>SERVICE</p>
-            </div>
-            <div class="item">
-                <p>CONTACT</p>
-            </div>
-        </header>
-
-        <div class="header-container">
-            <p class="p-above-headers">SPA & BEAUTY CENTER</p>
-            <h1>Beauty and success starts here.</h1>
-            <p class="main-h1-p">Together creeping heaven upon third dominion be upon won't darkness rule behold
-                itcreated good saw after she'd Our set living
-            </p>
-            <button class="button-1">
-                Reserve now
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-            <button class="button-2">
-                <i class="fa-regular fa-circle-play"></i>
-                Watch our story
-            </button>
+        </div>
+        <div class="first-section-right">
+            <img src="./img/header-bg.png" alt="header-bg">
         </div>
     </div>
 
-    <div class="header-about">
+    <div class="header-about" id="nav-about">
         <img src="./img/logo.png" alt="logo" class="logo">
         <p class="p-above-headers">ABOUT OUR SPA CENTER</p>
         <h2>Come and you will be inspired!</h2>
@@ -72,14 +89,13 @@
     </div>
 
     <div class="second-section">
-        <!-- tego nie zrobiłem nie wiem jak poddałem się-->
         <img src="img/services-bg-1.jpg" class="service-img" />
         <img src="img/services-bg-2.jpg" class="service-img" />
         <img src="img/services-bg-3.jpg" class="service-img" />
         <img src="img/services-bg-4.jpg" class="service-img" />
     </div>
 
-    <div class="section-header">
+    <div class="section-header" id="nav-feature">
         <h2>Popular procedures</h2>
         <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein
             were meat kind wherein and martcin</p>
@@ -144,7 +160,7 @@
         </div>
     </div>
 
-    <div class="first-form-container">
+    <div class="first-form-container" id="nav-service">
         <img src="img/contact-bg.jpg" alt="contact-bg" class="contact-bg-img">
         <form class="first-form-container-form" method="GET" id="first-form">
             <input type="text" name="name" id="name" placeholder="NAME">
@@ -191,33 +207,34 @@
         </div>
     </div>
 
-    <div class="second-form-container">
+
+
+    <div class="second-form-container" id="nav-contact">
         <div class="section-header">
             <h2>Get In Touch</h2>
             <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every
                 wherein
                 were meat kind wherein and martcin</p>
         </div>
-        <div class="second-form-container-inner">
-            <div class="second-form-container-left">
-                <p><img src="img/icons/icon-map.png" alt="icon-map" class="icon"></p>
-                <p><img src="img/icons/icon-mail.png" alt="icon-mail" class="icon"></p>
-                <p><img src="img/icons/icon-tel.png" alt="icon-tel" class="icon"></p>
-            </div>
-            <div class="second-form-container-right">
-                <p> 
+        <div class="second-form-container-info">
+            <div class="second-form-container-inner">
+                <div class="second-form-container-top">
+                    <img src="img/icons/icon-map.png" alt="icon-map" class="second-form-icon">
                     848 E 28TH ST, BROOKLYN <br>
                     NEW YORK, USA
-                </p>
-                <p>
+                </div>
+                <div class="second-form-container-middle">
+                    <img src="img/icons/icon-mail.png" alt="icon-mail" class="second-form-icon">
                     EXAMPLE@LEOSPA.COM <br>
                     EXAMPLE@LEOSPA.COM
-                </p>
-                <p>
+                </div>
+                <div class="second-form-container-bottom">
+                    <img src="img/icons/icon-tel.png" alt="icon-tel" class="second-form-icon">
                     +02 365 2365 3265 (02) <br>
                     +02 365 2365 3265 (04)
-                </p>
+                </div>
             </div>
+
             <form class="second-form-container-form" method="GET" id="second-form" onsubmit="secondForm()">
                 <input type="text" name="name" id="name" placeholder="FIRST NAME">
                 <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS">
@@ -231,24 +248,22 @@
         <img src="img/logo-txt.png" alt="logo-txt" class="logo">
         <header class="footer-navigation">
             <div class="item">
-                <p>HOME</p>
+                <a class="nav-link" href="#nav-home">HOME</a>
             </div>
             <div class="item">
-                <p>ABOUT</p>
+                <a class="nav-link" href="#nav-about">ABOUT</a>
             </div>
             <div class="item">
-                <p>FEATURE</p>
+                <a class="nav-link" href="#nav-feature">FEATURE</a>
             </div>
             <div class="item">
-                <p>SERVICE</p>
+                <a class="nav-link" href="#nav-service">SERVICE</a>
             </div>
             <div class="item">
-                <p>CONTACT</p>
+                <a class="nav-link" href="#nav-contact">CONTACT</a>
             </div>
         </header>
-
         <p>© COPYRIGHT 2020</p>
-
     </div>
 
     <script src="https://kit.fontawesome.com/421ce1adcb.js" crossorigin="anonymous"></script>
