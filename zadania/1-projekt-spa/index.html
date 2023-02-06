@@ -104,21 +104,21 @@
     <div class="procedures-cards">
         <div class="card">
             <img src="img/procedures-bg-1.jpg" alt="procedures-bg-1" class="procedures-bg">
-            <h3>Massage Therapy</h3>
+            <h3 class="h3-card">Massage Therapy</h3>
             <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters
                 firmament place</p>
             <button class="button-4">Read more</button>
         </div>
         <div class="card-middle">
             <img src="img/procedures-bg-2.jpg" alt="procedures-bg-2" class="procedures-bg">
-            <h3>Beatuy Care</h3>
+            <h3 class="h3-card">Beatuy Care</h3>
             <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters
                 firmament place</p>
             <button class="button-3">Read more</button>
         </div>
         <div class="card">
             <img src="img/procedures-bg-3.jpg" alt="procedures-bg-3" class="procedures-bg">
-            <h3>Executive Reflexology</h3>
+            <h3 class="h3-card">Executive Reflexology</h3>
             <p>Living winged said you darkness you're divide gathered and bring one seasons face great dr Waters
                 firmament place</p>
             <button class="button-4">Read more</button>
@@ -162,18 +162,21 @@
 
     <div class="first-form-container" id="nav-service">
         <img src="img/contact-bg.jpg" alt="contact-bg" class="contact-bg-img">
-        <form class="first-form-container-form" method="GET" id="first-form">
-            <input type="text" name="name" id="name" placeholder="NAME">
-            <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS">
-            <select name="select" id="select">
+        <form class="first-form-container-form" method="GET" id="form-1">
+            <input type="text" name="name" id="name" placeholder="NAME" class="form-field">
+            <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" class="form-field">
+            <select name="select" id="select" class="form-field">
                 <option value="message" disabled selected>SELECT SERVICE</option>
-                <option value="normal">NORMAL</option>
+                <option value="">Select service</option>
+                <option value="normal">Normal Service</option>
+                <option value="vip">VIP Serevice</option>
             </select>
-            <input type="tel" name="tel" id="tel" placeholder="PHONE NUMBER">
-            <input type="date" name="date" id="date" placeholder="DATE">
-            <input type="time" name="time" id="time" placeholder="TIME">
-            <textarea name="notes" id="notes" rows="3" placeholder="YOUR NOTES"></textarea>
+            <input type="tel" name="tel" id="tel" placeholder="PHONE NUMBER" class="form-field">
+            <input type="date" name="date" id="date" placeholder="DATE" class="form-field">
+            <input type="time" name="time" id="time" placeholder="TIME" class="form-field">
+            <textarea name="notes" id="notes" rows="3" placeholder="YOUR NOTES" class="form-field"></textarea>
             <input type="submit" value="MAKE AN APPOINTMENT" class="button-5" id="first-form-button">
+            <p class="form-1-msg" style="color:white"></p>
         </form>
     </div>
 
@@ -188,21 +191,21 @@
             <img src="img/blog-1.jpg" alt="procedures-bg-1" class="procedures-bg">
             <h6 class="h6-card">Relaxation | JULY 03, 2019</h6>
             <h3>Had seed herb grass mids</h3>
-            <p>Living winged said you darkness you're divide</p>
+            <p class="p-card">Living winged said you darkness you're divide</p>
             <button class="button-4">Read more</button>
         </div>
         <div class="card-middle">
             <img src="img/blog-2.jpg" alt="procedures-bg-2" class="procedures-bg">
             <h6 class="h6-card">Relaxation | JULY 03, 2019</h6>
             <h3>Divid image into creeping</h3>
-            <p>Living winged said you darkness you're divide</p>
+            <p class="p-card">Living winged said you darkness you're divide</p>
             <button class="button-3">Read more</button>
         </div>
         <div class="card">
             <img src="img/blog-3.jpg" alt="procedures-bg-3" class="procedures-bg">
             <h6 class="h6-card">Relaxation | JULY 03, 2019</h6>
             <h3>Had seed herb grass mids</h3>
-            <p>Living winged said you darkness you're divide</p>
+            <p class="p-card">Living winged said you darkness you're divide</p>
             <button class="button-4">Read more</button>
         </div>
     </div>
@@ -263,7 +266,7 @@
                 <a class="nav-link" href="#nav-contact">CONTACT</a>
             </div>
         </header>
-        <p>© COPYRIGHT 2020</p>
+        <span>© COPYRIGHT 2020</span>
     </div>
 
     <script src="https://kit.fontawesome.com/421ce1adcb.js" crossorigin="anonymous"></script>

@@ -1,32 +1,53 @@
-/* const data = { username: 'example' };
- */
-function secondForm() {
-    let name = document.forms["second-form"]["name"].value;
-    let email = document.forms["second-form"]["email"].value;
-    let comment = document.forms["second-form"]["comment"].value;
-    if (name == "") {
-      console.log("Name empty");
-    }
-    if (email == "") {
-        console.log("Email empty");
-    }
-    if (comment == "") {
-        console.log("Comment empty");
-    }
-  }
+const createAppointment = (appointment) => {
 
-fetch('https://akademia108.pl/api/ajax/post-appointment.php', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-})
-    .then((response) => response.json())
-    .then((data) => {
-        console.log('Success:', data);
+    const appointmentMessage = document.querySelector('.form-1-msg');
+
+    fetch('https://akademia108.pl/api/ajax/post-appointment.php', {
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        mode: 'cors',
+        method: 'POST',
+        body: JSON.stringify(appointment)
     })
-    .catch((error) => {
-        console.error('Error:', error);
-    }); 
+        .then(res => res.json())
+        .then(resJSON => {
+            console.log(resJSON);
+            appointmentMessage.classList.add('send');
+            appointmentMessage.innerText = `Dziękujemy ${resJSON.appointment.name}. Zostałeś zapisany!`
+        });
+}
 
+document.getElementById('form-1').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const appointmentMessage = document.querySelector('.form-1');
+    let formFields = document.getElementsByClassName('form-field');
+    let allFields = false;
+    let appointment = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        service: document.getElementById('select').value,
+        phone: document.getElementById('tel').value,
+        date: document.getElementById('date').value,
+        time: document.getElementById('time').value,
+        message: document.getElementById('notes').value
+    }
+
+    for (let i = 0; i < formFields.length; i++) {
+        if (formFields[i].value === '') {
+            allFields = false;
+            formFields[i].classList.add('error');
+        } else {
+            allFields = true;
+            formFields[i].classList.remove('error');
+        }
+    }
+
+    if (allFields) {
+        createAppointment(appointment);
+    } else {
+        appointmentMessage.classList.add('error');
+        appointmentMessage.innerText = `Wypełnij wymagane pola`;
+    }
+})
